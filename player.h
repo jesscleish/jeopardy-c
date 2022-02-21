@@ -15,6 +15,7 @@ typedef struct
 
 player playerArr[NUM_PLAYERS];
 
+extern void wordToUpper(char *name);
 extern bool playerExist(player *players, char *pName);
 
 extern void updateScore(player *players, char *pName, int score);

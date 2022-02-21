@@ -11,16 +11,19 @@
 #include <stdbool.h>
 
 #define MAX_LEN 256
-#define NUM_CATEGORIES 3
+#define NUM_CATEGORIES 5
 // The number of questions, you can use this in your functions in
 // questions.c, this can be accessed in questions.c
-#define NUM_QUESTIONS 12
+#define NUM_QUESTIONS 25
 
 // List of 3 categories as array of strings
 static char categories[NUM_CATEGORIES][MAX_LEN] = {
-    "programming",
-    "algorithms",
-    "databases"};
+    "Restaurants",
+    "Pokemon",
+    "Disney",
+    "Science",
+    "Coding",
+};
 
 // Questions struct for each question
 typedef struct
@@ -51,4 +54,4 @@ extern bool valid_answer(char *category, int value, char *answer);
 // Returns true if the question has already been answered
 extern bool already_answered(char *category, int value);
 
-#endif QUESTIONS_H_
+#endif "QUESTIONS_H_"

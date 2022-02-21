@@ -4,21 +4,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include "player.h"
-
-// converts entire string to upper case by reference
-void wordToUpper(char *name)
-{
-    int i = 0;
-    char letter;
-
-    while (name[i] != '\0')
-    {
-        letter = name[i];
-
-        name[i] = toupper(letter);
-        i++;
-    }
-}
+#include "util.h"
 
 // Creates 4 new players and prompts for name input for each
 void newPlayers(player *playerArr)
