@@ -12,3 +12,6 @@ These files define the functions utilized with questions, including verifying if
 
 ## jeopardy.c / jeopardy.h files
 Houses the “game logic”, and is the main “brain” behind the game.  It initializes (creates) the player array, takes input for the names of the players, and then conducts a game of jeopardy by prompting the user(s) for input to clearly indicate the outcome of each turn.
+
+## main.c
+Controls the game flow, and transitions between sections of game logic.  Main.c is responsible for starting rounds, ending the game, etc.
